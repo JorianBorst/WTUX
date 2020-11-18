@@ -1,0 +1,164 @@
+body {
+    background-color: #e2e2e2;
+    margin-left: 2em;
+    margin-right: 2.5em;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+h1, h2, h3 {
+    color: #384d48;
+    padding-top: 5%;
+}
+
+p {
+    color: #6e7271;
+}
+
+ul, li, ol {
+    color: #6e7271;
+    margin: 5px;
+    text-align: left;
+}
+
+dl, dd {
+    color: #6e7271;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+/* .grid-header a:hover+a.active {
+    background-color: #384d48;
+    box-shadow: unset;
+} */
+
+header {
+    background-color: #384d48;
+    overflow: hidden;
+    box-shadow: 2px 2px 4px black;
+}
+
+header a {
+    float: left;
+    color: #fff9fb;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: large;
+}
+
+header a.active {
+    background-color: #6e7271;
+    color: white;
+}
+
+header a:hover {
+    background-color: #6e7271;
+    color: #fff9fb;
+    box-shadow: 0px 0px 20px white;
+}
+
+.grid-container {
+    display: grid;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    'header header header header'
+     'title title title  title '
+      'form form form form'
+       'form form form form' 
+       'footer footer footer footer';
+    background-color: whitesmoke;
+}
+
+.grid-container>div {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.grid-title {
+    grid-area: tittle;
+    text-align: center;
+}
+
+.grid-form {
+    grid-area: form;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 5%;
+    font-size: larger;
+   
+    
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:auto; */
+}
+.grid-form label{
+    padding-top:50px;
+}
+
+
+.grid-form input {
+    width: 90%;
+    padding: 7px 7px;
+    margin: 5px 0px;
+    
+}
+
+.grid-form input[type=text], [type=password] {
+    border: none;
+    border-bottom: 4px #384d48;
+    transition: width 0.8s ease-in-out;
+    box-sizing: border-box;
+}
+
+
+.grid-form input[type=text]:focus {
+    border: 2px solid #555;
+}
+
+.grid-form input[type=password]:focus {
+    border: 2px solid #555;
+}
+
+.grid-form input[type=action] {
+    /* margin-right: 2em;
+    margin-left: 20%; */
+}
+
+.grid-form input[type=submit] {
+    background-color: #384d48;
+    border: none;
+    color: whitesmoke;
+    cursor: pointer;
+    margin: 20px 0px;
+    transition: color 1s,background-color 1s;
+}
+
+.grid-form input[type=submit]:hover {
+    background-color: whitesmoke;
+    border: -5px#384d48;
+    color:#384d48;
+    transition: color 1s,background-color 1s;
+    
+}
+
+footer {
+    float: bottom;
+    grid-area: footer;
+    margin-top: 20em;
+    background-color: #384d48;
+    box-shadow: 2px 2px 4px black;
+}
+
+footer h2 {
+    
+    font-size: medium;
+    color: whitesmoke;
+    text-align: center;
+    padding:1em;
+}
+
